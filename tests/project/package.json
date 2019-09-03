@@ -11,8 +11,36 @@
   },
   "private": true,
   "dependencies": {
-    "cordova": "^6.1.1",
+    "cordova": "9.0.0",
     "lodash-node": "^3.10.2",
-    "replace": "^0.3.0"
+    "replace": "^0.3.0",
+    "cordova-browser": "~4.1.0",
+    "cordova-ios": "~5.0.1",
+    "cordova-android": "8.0.0",
+    "cordova-windows": "~5.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "browser",
+      "ios",
+      "android",
+      "windows"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-qrscanner": {},
+      "cordova-plugin-qrscanner-tests": {},
+      "cordova-plugin-test-framework": {},
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-vibration": {}
+    }
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "1",
+    "cordova-plugin-qrscanner": "../../cordova-plugin-qrscanner",
+    "cordova-plugin-qrscanner-tests": "../../cordova-plugin-qrscanner/tests",
+    "cordova-plugin-test-framework": "~1.1.2",
+    "cordova-plugin-screen-orientation": "~1.4.2",
+    "cordova-plugin-vibration": "~2.1.1"
   }
 }
